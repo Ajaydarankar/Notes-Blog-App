@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>📝 FastAPI Blog</h1>
+            <p>Create posts and interact with comments.</p>
+        </header>
+
+        <!-- Create Post -->
+        <div class="card">
+
+            <h2>Create New Post</h2>
+
+            <form id="postForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter post title"
+                    required
+                >
+
+                <textarea
+                    id="content"
+                    placeholder="Write your content..."
+                    required
+                ></textarea>
+
+                <button type="submit" id="createBtn">
+                    Create Post
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Refresh -->
+        <button id="refreshBtn">
+            🔄 Refresh Posts
+        </button>
+
+        <!-- Posts -->
+        <div id="postsContainer">
+
+            <!-- JavaScript will insert posts here -->
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
